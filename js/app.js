@@ -80,7 +80,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-let testArray = [2, 3, 4]; //eslint-disable-line
+let testArray = [2, 3, 4];
 function sumArray(sumArr) { //eslint-disable-line
     let sum3 = sum(sumArr[0], sumArr[1])[0];
     let sum4 = sum(sum3, sumArr[2])[0];
@@ -107,12 +107,16 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+
 function multiplyArray(multArr) { //eslint-disable-line
-
+let multi3 = multiply(multArr[0], multArr[1])[0];
+let multi4 = multiply(multi3, multArr[2])[0];
+let string3 = 'The numbers ' + multArr[0] + ',' + multArr[1] + ',' + multArr[2] + ' have a product of ' + multi4 + '.';
+return [multi4, string3]
 }
-
+//console.log(multiplyArray(testArray));
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
